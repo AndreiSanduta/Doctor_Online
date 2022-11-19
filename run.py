@@ -1,3 +1,6 @@
+inport drug_prescription
+
+drog_prescription_options = []
 def get_patient_data():
     """
     Allow the data collect from the patient such as, name, 
@@ -90,10 +93,93 @@ def validate_patient_age(value):
 
     return True
 
+def patient_symptoms():
+    """
+    Get symtoms typed in by the patient.
+    run a while loop to collect patient symtoms data.
+    print a message when the input is valid 
+    the loop stops when the imput thata is not valid.
+    """
+
+while True:
+    print('chose on of the symptoms listed below')
+    def jls_extract_def():
+        
+        return 
 
 
-
+    #print.print_symptoms_list = jls_extract_def()
+    #symptoms = input(f'\n{patient_name}, type in one of the symptoms listed above:\n')
         
 
+def get_pain_level():
+    """
+    Get level of pain by patient input data.
+    Run a while loop to collect valid data.
+    Print a message when the input is valid.
+    The loop stops when the data is valid.
+    """
+
+    while True:
+    print('Type in your level of pain in a scale from 1 to 10')
+    level_pain = input(f'{patient_name}, what is your level of pain:\n')
+    if validate_pain(level_pain):
+        print('your level of pain has been registrated!\n')
+    else:
+        continue
+    break
 
 
+def validate_level_pain(value):
+    """
+    Validade pain level Input by Patient
+    If the level of pain is not a valid number between 1 and 10
+    Print message when data is not valid.
+    the loop stops when the data is valid
+    """
+    try:
+        value = float(value)
+        if value not in range(1, 10):
+            raise ValueError
+    
+    except ValueError as e:
+        print('Invalid input, yor level of pain should contain a number between 1 and 10!\n')
+        return False
+
+    return True
+
+
+def get_former_illnes(Value):
+    """
+    get imput data from patient.
+    run while loop to collect all the valid data input from user,
+    print message when the input is valid. 
+    The loopstops when the input data is valid.
+    """
+
+    while True 
+    former_illnes = input('Do you have any former illnes?\n')
+    if valid_former_illnes(former_illnes):
+        print(f'{name.title()}, your answer has been submited')
+        else: 
+            continue
+        break
+
+
+
+
+
+    
+
+    def main():
+        """
+        Run all program functions.
+        """
+        get_patient_data()
+        get_pain_level()
+        get_former_illnes()
+
+    if __name__== '__main__':
+        main()
+
+        
