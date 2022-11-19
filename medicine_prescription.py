@@ -1,7 +1,10 @@
 
 
-sypmtoms_list = ['Abdominal Pain', 'Acid Reflux', 'Heartburn', 
-'Airsickness', 'Motion Sickness',
+sypmtoms_list = ['Abdominal Pain', 
+'Acid Reflux', 
+'Heartburn', 
+'Airsickness', 
+'Motion Sickness',
 'Bad Breath',
 'Abdominal Pain',
 'Bleeding',
@@ -9,10 +12,17 @@ sypmtoms_list = ['Abdominal Pain', 'Acid Reflux', 'Heartburn',
 'Fatigue',
 'Headache\n']
 
-medicine_prescription_options = ['Camylofin', 'Nizatidine', 'Adenosine','
-'Pregabalin', 'Travelmina', 'Oral-biotic'
-'Nexacare', 'Tranexamic acid', 
-'guaifenesin' 'Vitamine D', 'De Cefaleia']
+medicine_prescription_options = ['Camylofin', 
+'Nizatidine', 
+'Adenosine',
+'Pregabalin', 
+'Travelmina', 
+'Oral-biotic'
+'Nexacare', 
+'Tranexamic acid', 
+'guaifenesin',
+'Vitamine D', 
+'De Cefaleia']
 
 def print_Abdominal_Pain():
     """
@@ -57,7 +67,7 @@ def Motion_Sickness():
     print('You should take this medicine:' 
     ' "Travelmina" one day before the tryp\n.')
 
-def Bad Breath():
+def Bad_Breath():
     """
     Print the medicine prescription for Bad Breath.
     """

@@ -184,7 +184,7 @@ def get_drogs_alergies(Value):
 
 
 def drog_prescription_options():
-    
+
     
 
 
@@ -196,6 +196,7 @@ def drog_prescription_options():
         get_patient_data()
         get_pain_level()
         get_former_illnes()
+        get_level_pain()
 
     if __name__== '__main__':
         main()

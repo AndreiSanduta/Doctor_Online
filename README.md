@@ -1,31 +1,42 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Doctor_Online
 
-Welcome AndreiSanduta,
+Medical consultationis a Online App built with Python language that runs on Heroku.
 
-This is the Code Institute student template for deploying your third portfolio project, the Python command-line project. The last update to this file was: **August 17, 2021**
+The following program it is builded to be an Online medical consultation. 
 
-## Reminders
+The main gol of this app is to give to the patient some medication to solve a temporary pain or discomfort. 
+By doing this it’s possible to avoid long queues on the hospitals and allow to solve minor problems for someone in need of it. 
 
-* Your code must be placed in the `run.py` file
-* Your dependencies must be placed in the `requirements.txt` file
-* Do not edit any of the other files or your code may not deploy properly
+In the next few lines I’ll explain the functionality of the program: 
 
-## Creating the Heroku app
+<img src="images/diagram.png" alt="diagram" title="Diagram">
 
-When you create the app, you will need to add two buildpacks from the _Settings_ tab. The ordering is as follows:
 
-1. `heroku/python`
-2. `heroku/nodejs`
+1 The program will have an Wellcome message and will ask the following questions: Name, document ID and Gender.
 
-You must then create a _Config Var_ called `PORT`. Set this to `8000`
+2 After collecting all the data needed the program will pop up a warning message remembering the patient to
+ be 100% honest once the answers are essential for the success of the consultation.
 
-If you have credentials, such as in the Love Sandwiches project, you must create another _Config Var_ called `CREDS` and paste the JSON into the value field.
 
-Connect your GitHub repository and deploy as normal.
+ 3 The patient chose one symptom, if the patient chose more than three the data is invalid 
+and is requested to answer again.
 
-## Constraints
+4 On this stage is asked the Level of pain, if the level of pain is superior to eight in a scale of one to ten an alert 
+of medical emergency will be activated and the patient is highly recommended to  go to the hospital ASAP!
+If the level of pain is inferior to 7 the the consultation moves on.
 
-The deployment terminal is set to 80 columns by 24 rows. That means that each line of text needs to be 80 characters or less otherwise it will be wrapped onto a second line.
+5 In this stage the patient is questioned about old illnesses, if the question is affirmative then the patient must go to the hospital. 
+The reason is that other treatments may be necessary or a specific type of medication. If the answer is no then the patient moves 
+one to the next question.
 
------
-Happy coding!
+6  Fourth question is about any allergies that the patient could have, if the answer is positive than the patient should go to 
+an hospital to pass thru a detailed examination and avoid major problems. If the answer is no then the program will
+prescribe the proper medication according to the age , gender and type of symptoms. 
+
+## Credits
+For the medicine used for every symptom I have cheked on this website:
+https://www.medindia.net/
+For the sypmtom list I used this website:
+https://medlineplus.gov/symptoms.html
+for Help with the code I used:
+https://learn.codeinstitute.net/
