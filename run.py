@@ -151,14 +151,30 @@ def validate_level_pain(value):
 
 def get_former_illnes(Value):
     """
-    get imput data from patient.
+    get imput data from patient regarding former elements.
     run while loop to collect all the valid data input from user,
     print message when the input is valid. 
     The loopstops when the input data is valid.
     """
 
-    while True 
+    while True:
     former_illnes = input('Do you have any former illnes?\n')
+    if valid_former_illnes(former_illnes):
+        print(f'{name.title()}, your answer has been submited')
+        else: 
+            continue
+        break
+
+def get_drogs_alergies(Value):
+    """
+    get imput data from patient regardig drog alergies.
+    run while loop to collect all the valid data input from user,
+    print message when the input is valid. 
+    The loopstops when the input data is valid.
+    """
+
+    while True:
+    drogs_alergies = input('Do you have any drog alergies?\n')
     if valid_former_illnes(former_illnes):
         print(f'{name.title()}, your answer has been submited')
         else: 
@@ -167,9 +183,11 @@ def get_former_illnes(Value):
 
 
 
-
-
+def drog_prescription_options():
     
+    
+
+
 
     def main():
         """
