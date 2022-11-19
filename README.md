@@ -34,9 +34,9 @@ an hospital to pass thru a detailed examination and avoid major problems. If the
 prescribe the proper medication according to the age , gender and type of symptoms. 
 
 ## Credits
-For the medicine used for every symptom I have cheked on this website:
+1 For the medicine used for every symptom I have cheked on this website:
 https://www.medindia.net/
-For the sypmtom list I used this website:
+2 For the sypmtom list I used this website:
 https://medlineplus.gov/symptoms.html
-for Help with the code I used:
+3 For Help with the code I used:
 https://learn.codeinstitute.net/
