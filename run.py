@@ -103,7 +103,6 @@ def patient_symptoms():
 
 while True:
     print('chose on of the symptoms listed below')
-    def jls_extract_def():
         
         return 
 
@@ -184,8 +183,6 @@ def get_drogs_alergies(Value):
 
 
 def drog_prescription_options():
-
-    
 
 
 
